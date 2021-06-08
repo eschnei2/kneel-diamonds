@@ -12,7 +12,7 @@ document.addEventListener(
 
 export const KneelDiamonds = () => { 
     
-    let test = `
+    return `
         <h1>Kneel Diamonds</h1>
 
         <article class="choices">
@@ -22,9 +22,11 @@ export const KneelDiamonds = () => {
             </section>
             <section class="choices__sizes options">
                 <h2>Sizes</h2>
+                ${DiamondSizes()}
             </section>
             <section class="choices__styles options">
                 <h2>Styles</h2>
+                ${JewelryStyles()}
             </section>
         </article>
 
@@ -36,6 +38,5 @@ export const KneelDiamonds = () => {
             <h2>Custom Jewelry Orders</h2>
         </article>
     `
-    return test
 }
 
