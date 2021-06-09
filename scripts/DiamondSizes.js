@@ -1,4 +1,13 @@
-import { getSizes } from "./database.js"
+import { getSizes, setSize } from "./database.js"
+
+document.addEventListener(
+    "change",
+    (event) => {
+        if (event.target.name === "size") {
+            setSize(parseInt(event.target.value))
+        }
+    }
+)
 
 const sizes = getSizes()
 

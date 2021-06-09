@@ -5,7 +5,7 @@ import { Orders } from "./Orders.js"
 import { Metals } from "./Metals.js"
 
 document.addEventListener(
-    "click",
+    "chang",
     (event) => {
     }
 )

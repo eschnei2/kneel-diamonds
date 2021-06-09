@@ -1,28 +1,31 @@
-import { getStyles } from "./database.js"
-
-const styles = getStyles()
+import { getStyles, setStyle } from "./database.js"
 
 document.addEventListener(
     "change",
     (event) => {
+        if (event.target.name === "style") {
+            setStyle(parseInt(event.target.value))
+        }
     }
 )
+
+const styles = getStyles()
 
 export const JewelryStyles = () => {
     let html = "<ul>"
 
     // Use .map() for converting objects to <li> elements
-    /* const listItemsArray = */
-
-    for (const style of styles) {
-        html += `<li>
+    const listItemsArray = styles.map(
+        (style)=> {
+            return `<li>
             <input type="radio" name="style" value="${style.id}" /> ${style.style}
-        </li>`
-    }
+            </li>`
+        }
+    )
 
 
     // Join all of the strings in the array into a single string
-   /*  html += listItems.join("") */
+     html += listItemsArray.join("") 
 
     html += "</ul>"
     return html
