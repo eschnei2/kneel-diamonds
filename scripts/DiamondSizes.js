@@ -11,14 +11,14 @@ document.addEventListener(
 
 const sizes = getSizes()
 
-document.addEventListener(
-    "change",
-    (event) => {
-        if (event.target.name === "size") {
-            window.alert(``)
-        }
-    }
-)
+// document.addEventListener(
+//     "change",
+//     (event) => {
+//         if (event.target.name === "size") {
+//             window.alert(``)
+//         }
+//     }
+// )
 
 export const DiamondSizes = () => {
     let html = "<ul>"

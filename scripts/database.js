@@ -6,7 +6,7 @@
 
 */
 const database = {
-    orderBuild: {},
+    orderBuilder: {},
     styles: [
         { id: 1, style: "Classic", price: 500 },
         { id: 2, style: "Modern", price: 710 },
